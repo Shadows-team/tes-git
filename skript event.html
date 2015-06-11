@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<script src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+					$("th").addClass("orange");
+
+					$("tr:odd").addClass("hijaumuda");/* Baris Genap */
+					$("tr:even").addClass("hijautua");/* Baris Ganjil */
+
+					$("tr").mouseover(function(){
+						$(this).addClass("merahmuda");
+					});
+
+					$("tr").mouseout(function(){
+						$(this).removeClass("merahmuda");
+					});
+
+					$("tr").click(function(){
+						$(this).toggleClass("birumuda");
+					});
+			});
+		</script>
+		<style type="text/css">
+			.hijaumuda{
+				background-color: #6F6;
+			}
+			.hijautua{
+				background-color: #0C3;
+			}
+			.orange{
+				background-color: #F60;
+				cursor:default;
+			}
+			.merahmuda{
+				background-color: #F06;
+				cursor:pointer;
+			}
+			.birumuda{
+				background-color: #09F;
+			}
+		</style>
+	</head>
+<body>
+	<table width="300" border="0" cellpading="4">
+		<tr>
+			<th>No</th>
+			<th>Nama</th>
+			<th>Kota</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Firman Hidayat</td>
+			<td>Bandung</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Ferdy Nur Muhammad</td>
+			<td>Jakarta</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>M RIjal</td>
+			<td>Banten</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Andi</td>
+			<td>Surabaya</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Andi</td>
+			<td>Surabaya</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>M RIjal</td>
+			<td>Banten</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

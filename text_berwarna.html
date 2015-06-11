@@ -1,0 +1,33 @@
+<html>
+<head>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#").addClass("biru");
+			$(".subtarget").addClass("biru");
+		});
+
+	</script>
+	<style type="text/css">
+	.biru{
+		color:blue;
+		font-weight:bold;
+		background-color: red;
+}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Daftar Menu</h1>
+		<p>Menu favorit:</p> 
+	</div>
+	<div>
+		<ul id="target"><!-- selector id -->
+			<li>Nasi goreng</li>
+			<li class="subtarget">Sop Buntut</li><!-- selector class -->
+			<li>Mie ayam</li>
+		</ul>
+	</div>
+</body>
+
+</html>

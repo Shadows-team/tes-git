@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<script src="jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".flip").click(function(){
+					$(".pesan").slideToggle("slow");
+				});
+			});
+		</script>
+		<style type="text/css">
+			.pesan{height:120px;display:none;}
+			.pesan, p.flip{
+				margin:0px;
+				padding:5px;
+				text-align: center;
+				background: lightyellow;
+				border:1px solid blue;
+				cursor:pointer; 
+			}
+		</style>
+	</head>
+	<body>
+		<div class="slide">
+		<div class="pesan">
+			<p>Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan<br/> Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan</p>
+
+			<p>Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan <br/>Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan</p>
+		</div>
+			<p class="flip"><b>Isi Pesan Isi Pesan Isi Pesan Isi Pesan Isi Pesan </b></p>
+		</div>
+	</body>
+</html>
